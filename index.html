@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="title">
+        <p>Student Management CURD</p>
+    </div>
+    <!-- -------------------------------form------------------------------- --> 
+    
+    <section>
+        <div class="input">
+            <div>
+                <input type="text" name="name" id="name" placeholder="name">
+            </div>
+            
+            <div>
+                <input type="email" name="email" id="email" class="inline" placeholder="Email">
+            </div>
+                
+            <div>
+                <input type="number" name="gpa" id="gpa" class="inline" placeholder="GPA"> 
+            </div>
+             
+            <div>
+                <input type="age" name="age" id="age" placeholder="Age">
+            </div>
+               
+             
+            <div>
+                <input type="text" name="degree" id="degree" placeholder="Degree">
+            </div>
+        </div>
+        <div class="submit" id="submit" onclick="AddRows()">
+                <p>Add Student</p>
+        </div>
+    </section>
+
+
+    <!-- -----------------------------------search by name------------------------------------ -->
+
+    <section>
+        <div class="search" >
+            <input type="text" name="text" onkeyup="searchData()"  id="search" placeholder="Search by Name, email, degree">
+        </div>
+    </section>
+
+    <!-- ----------------------------------------table------------------------------------------- -->
+
+    <section>
+        <table class="table-data" id="show">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            
+            <tbody id="tbody" style="font-weight: 300;">
+                <tr>
+                    <td><p></p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="action_col">
+                        <div class="degree"></div>
+                        <div class="actions"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
+

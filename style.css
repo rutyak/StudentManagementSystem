@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+.title{
+    font-size: 1.7em;
+    margin: 0.9rem 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input input {
+    width: 23.8rem;
+    height: 2.4rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border: 1px solid gray;
+}
+
+.submit{
+    width: 30rem;
+}
+.submit p{
+   margin-left: 3rem;
+   margin-bottom: 4rem;
+   color: black;
+   background-color: white;
+   height: 2.4rem;
+   text-align: center;
+   padding-top: 0.5rem;
+   border: 1px solid gray;
+}
+
+
+/* ------------------------search------------------------------- */
+
+.search input{
+    width: 77.5rem;
+    height: 2.5em;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border: 1px solid gray;
+
+}
+
+/* ------------------------------table-------------------------------- */
+
+table, tr, th, td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 77.5rem;
+    height: 2.5em;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    border: 1px solid gray;
+}
+
+table thead tr th{
+    font-weight: 300;
+}
+table tr td{
+    padding: 5px 12px 5px 12px;
+}
+/* 
+#action_col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actions img {
+    width: 1rem;
+} */
